@@ -1,4 +1,5 @@
-import * as THREE from "three";
+// import * as THREE from "three";
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -32,7 +33,7 @@ const geometry = new THREE.CylinderGeometry(1, 1, 0.45, 128); // 128 radial segm
 
 const textureLoader = new THREE.TextureLoader();
 const rubberTexture = textureLoader.load(
-  "/rubber.jpg",
+  "/public/rubber.jpg",
   () => {
     console.log("Texture loaded successfully!");
   },
@@ -45,7 +46,7 @@ const material = new THREE.MeshStandardMaterial({
   color: 0x1c1c1c, // Dark gray for a rubbery look
   roughness: 1, // High roughness for a matte finish
   metalness: 0, // No metallic reflection
-  bumpMap: rubberTexture, // Use the rubber texture as a bump map
+  // bumpMap: rubberTexture, // Use the rubber texture as a bump map
   bumpScale: 3.2, // Adjust the intensity of the texture
 });
 const puck = new THREE.Mesh(geometry, material);
@@ -55,10 +56,10 @@ puck.scale.set(1.7, 1.7, 1.7); // Scale factors for X, Y, Z (2x the original siz
 camera.position.z = 5;
 
 // Add lights
-const ambientLight = new THREE.AmbientLight(0x4910ce, 70.5); // Soft white light
+const ambientLight = new THREE.AmbientLight(0x4910ce, 20.5); // Soft white light
 scene.add(ambientLight);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 13); // Bright directional light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 4); // Bright directional light
 directionalLight.position.set(5, 5, 5); // Position it to shine on the puck
 scene.add(directionalLight);
 
