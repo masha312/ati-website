@@ -73,3 +73,14 @@ a:focus-visible {
   outline-width: 2px;
   outline-offset: 4px;
 }
+
+@media (hover: none) {
+  canvas {
+    display: none !important;
+  }
+
+  .links {
+    flex-direction: column;
+    width: unset;
+  }
+}
