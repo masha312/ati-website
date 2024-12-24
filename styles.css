@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "Karrik Italic"; /* Name of the font */
-  src: url("./public/Karrik-Italic.otf") format("opentype"); /* Path to the font file */
+  font-family: "Karrik Italic";
+  src: url("./fonts/Karrik-Italic.woff2") format("woff2"),
+    url("./fonts/Karrik-Italic.woff") format("woff"),
+    url("./fonts/Karrik-Italic.ttf") format("truetype");
   font-style: italic; /* Font style */
   font-weight: normal; /* Adjust if there are bold weights in the font family */
 }
@@ -62,6 +64,7 @@ canvas {
 a {
   color: white;
   text-decoration-color: #4910ce;
+  font-style: italic;
 }
 
 a:hover {
