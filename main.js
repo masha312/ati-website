@@ -15,7 +15,16 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio); // Set the pixel ratio for high-density screens
 renderer.setClearColor(0xffffff, 0);
 renderer.setAnimationLoop(animate);
-document.body.appendChild(renderer.domElement);
+
+const coverSection = document.querySelector("section.cover");
+if (coverSection) {
+  coverSection.appendChild(renderer.domElement);
+} else {
+  console.warn(
+    "No section with class 'cover' found. Appending to body instead."
+  );
+  document.body.appendChild(renderer.domElement);
+}
 
 // const environmentMap = textureLoader.load([
 //   "/posx.jpg",
