@@ -1,8 +1,26 @@
 {
   "dependencies": {
-    "three": "^0.171.0"
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "vite": "^6.0.5"
-  }
+  },
+  "name": "ati-website",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masha312/ati-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masha312/ati-website/issues"
+  },
+  "homepage": "https://github.com/masha312/ati-website#readme",
+  "description": ""
 }

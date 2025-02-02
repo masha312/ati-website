@@ -10,6 +10,20 @@
       data-domain="alongtheice.com"
       src="https://plausible.io/js/script.js"
     ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+          "three/examples/jsm/loaders/OBJLoader": "https://unpkg.com/three@0.162.0/examples/jsm/loaders/OBJLoader.js",
+          "three/examples/jsm/postprocessing/EffectComposer": "https://unpkg.com/three@0.162.0/examples/jsm/postprocessing/EffectComposer.js",
+          "three/examples/jsm/postprocessing/RenderPass": "https://unpkg.com/three@0.162.0/examples/jsm/postprocessing/RenderPass.js",
+          "three/examples/jsm/postprocessing/SMAAPass": "https://unpkg.com/three@0.162.0/examples/jsm/postprocessing/SMAAPass.js",
+          "three/examples/jsm/postprocessing/ShaderPass": "https://unpkg.com/three@0.162.0/examples/jsm/postprocessing/ShaderPass.js",
+          "three/examples/jsm/postprocessing/UnrealBloomPass": "https://unpkg.com/three@0.162.0/examples/jsm/postprocessing/UnrealBloomPass.js",
+          "three/examples/jsm/shaders/FXAAShader": "https://unpkg.com/three@0.162.0/examples/jsm/shaders/FXAAShader.js"
+        }
+      }
+    </script>
     <title>ALONG THE ICE</title>
   </head>
   <body>
@@ -83,6 +97,7 @@
         </p>
       </div>
     </section>
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
